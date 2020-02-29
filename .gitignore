@@ -22,3 +22,23 @@ docs/site/
 # committed for packages, but should be committed for applications that require a static
 # environment.
 Manifest.toml
+
+# Pauls Julia stuff
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+
+# Ignore dumb mac files
+*.DS_Store
+
+# Spreadsheets
+*.xls
+*.xlsx
+*.csv
+
+# PDFs
+*.pdf
+
+# SVG
+*.svg
