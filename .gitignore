@@ -23,12 +23,6 @@ docs/site/
 # environment.
 Manifest.toml
 
-# Pauls Julia stuff
-*.jl.cov
-*.jl.*.cov
-*.jl.mem
-deps/deps.jl
-
 # Ignore dumb mac files
 *.DS_Store
 
