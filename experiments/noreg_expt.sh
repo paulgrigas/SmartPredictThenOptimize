@@ -3,13 +3,13 @@
 #SBATCH --job-name=spo_shortestpath_noreg_march2020
 #
 # Partition:
-#SBATCH --partition=savio2
+#SBATCH --partition=savio
 #
 # Request one node:
 #SBATCH --nodes=1
 #
 # Specify number of tasks for use case:
-#SBATCH --ntasks-per-node=24
+#SBATCH --ntasks-per-node=20
 #
 # Processors per task:
 #SBATCH --cpus-per-task=1
