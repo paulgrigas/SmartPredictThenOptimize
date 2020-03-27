@@ -29,10 +29,9 @@ Manifest.toml
 # Spreadsheets
 *.xls
 *.xlsx
-*.csv
-
-# PDFs
-*.pdf
 
 # SVG
 *.svg
+
+# R History
+.Rhistory
