@@ -13,9 +13,9 @@ grid_dim = 5
 num_trials = 50
 n_test = 10000
 
-num_lambda = 10
-lambda_max = 100
-lambda_min_ratio = 10.0^(-8)
+num_lambda = 1
+lambda_max = 0
+lambda_min_ratio = 1
 holdout_percent = 0.25
 regularization = :lasso
 different_validation_losses = false
@@ -38,5 +38,5 @@ expt_results = shortest_path_multiple_replications(rng_seed, num_trials, grid_di
     holdout_percent = holdout_percent, regularization = regularization,
     different_validation_losses = different_validation_losses)
 
-csv_string = "shortest_path_100_1000.csv"
+csv_string = "shortest_path_100_1000_noreg.csv"
 CSV.write(csv_string, expt_results)
