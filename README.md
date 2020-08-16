@@ -1,6 +1,8 @@
 # SmartPredictThenOptimize
 Code for the paper ["Smart 'Predict, then Optimize'"](https://arxiv.org/abs/1710.08005) by Adam Elmachtoub and Paul Grigas.
 
+The code will run on Julia v1.5.0 and requires several packages as listed in the headers of various files.
+
 ## Overview
 
 The code is divided into several folders:
