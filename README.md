@@ -12,4 +12,4 @@ The code is divided into several folders:
 
 The main file in the `solver` folder for training a model with the SPO+ loss function is `validation_set.jl` and the corresponding function is `validation_set_alg`. The documentation in the file explains the syntax for calling this function.
 
-The files in the folder
+The files in the folder `experiments` can simply be run to replicate the experiments included in the paper.
