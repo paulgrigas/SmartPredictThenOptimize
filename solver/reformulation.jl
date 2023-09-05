@@ -121,9 +121,9 @@ function sp_reformulation_path_jump(X, c, sp_graph::shortest_path_graph;
 
     # Start creating dual JuMP model
     if solver == :Gurobi
-        mod = Model(with_optimizer(Gurobi.Optimizer, gurobiEnv))
+        mod = Model(()->Gurobi.Optimizer(gurobiEnv))
     elseif solver == :Clp
-        mod = Model(with_optimizer(Clp.Optimizer))
+        mod = Model(Clp.Optimizer)
     else
         error("Not a valid solver: either :Clp or :Gurobi")
     end
@@ -306,9 +306,9 @@ function leastSquares_path_jump(X, c;
 
     # Start creating JuMP model
     if solver == :Gurobi
-        mod = Model(with_optimizer(Gurobi.Optimizer, gurobiEnv))
+        mod = Model(()->Gurobi.Optimizer(gurobiEnv))
     elseif solver == :Clp
-        mod = Model(with_optimizer(Clp.Optimizer))
+        mod = Model(Clp.Optimizer)
     else
         error("Not a valid solver: either :Clp or :Gurobi")
     end

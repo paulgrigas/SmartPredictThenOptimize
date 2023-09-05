@@ -426,13 +426,13 @@ function setup_gurobi_env(; quiet_mode = true, method_type = :barrier, use_time_
 	env = Gurobi.Env()
 
 	if quiet_mode
-		setparams!(env; OutputFlag = 0)
+		Gurobi.GRBsetintparam(env, "OutputFlag", 0)
 	end
 
 	if method_type == :barrier
-		setparams!(env; Method = 2)
+		Gurobi.GRBsetintparam(env, "Method", 2)
 	elseif method_type == :method3
-		setparams!(env; Method = 3)
+		Gurobi.GRBsetintparam(env, "Method", 3)
 	elseif method_type != :default
 		error("Enter a valid method type for Gurobi.")
 	end
