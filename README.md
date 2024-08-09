@@ -3,6 +3,8 @@ Code for the paper ["Smart 'Predict, then Optimize'"](https://arxiv.org/abs/1710
 
 The code will run on Julia v1.5.0 and requires several packages as listed in the headers of various files.
 
+This code is helpful for replicating the experiments in the above paper. For training your own models on your own data using SPO+, it is recommended to use the excellent [PyEPO package](https://github.com/khalil-research/PyEPO) by Bo Tang and Elias B. Khalil.
+
 ## Overview
 
 The code is divided into several folders:
