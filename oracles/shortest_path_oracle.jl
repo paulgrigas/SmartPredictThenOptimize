@@ -59,9 +59,9 @@ function sp_flow_jump_setup(sources, destinations, start_node, end_node; solver=
 
     # Set up JuMP model
     if solver == :Gurobi
-        mod = Model(with_optimizer(Gurobi.Optimizer, gurobiEnv))
+        mod = Model(()->Gurobi.Optimizer(gurobiEnv))
     elseif solver == :Clp
-        mod = Model(with_optimizer(Clp.Optimizer))
+        mod = Model(Clp.Optimizer)
     else
         error("Not a valid solver, either :Clp or :Gurobi")
     end
